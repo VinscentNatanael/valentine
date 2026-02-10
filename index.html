@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <title>Untuk Huang Xin Yi ❤️</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<div class="hearts"></div>
+
+<!-- Music -->
+<div class="music-control" onclick="toggleMusic()">🎵</div>
+<audio id="music" src="music.mp3" loop></audio>
+
+<!-- Hero -->
+<section class="hero">
+  <div class="glass romantic-glow">
+    <h1>❤️ Untuk Huang Xin Yi ❤️</h1>
+    <p id="typing" class="hero-text"></p>
+    <button class="btn-love" onclick="scrollDown()">Buka Pesanku 🤍</button>
+  </div>
+</section>
+
+
+<!-- Photo -->
+<section class="photo reveal">
+  <img src="foto-kalian.jpg" alt="kita">
+  <p class="caption">Aku & Kamu, dan semua cerita di antaranya 🤍</p>
+</section>
+
+<!-- Message -->
+<section class="message reveal">
+  <div class="card">
+    <p>
+      <strong>Selamat hari jadian kita yang ke-6 bulan, sayang. 🤍</strong><br><br>
+
+      Terima kasih karena sudah berjalan sejauh ini bersamaku—untuk setiap kesabaran
+      yang kamu berikan, setiap pengertian yang kamu pilih, dan setiap cinta yang
+      kamu pertahankan, bahkan di saat semuanya tidak selalu mudah.<br><br>
+
+      Tujuh bulan ini bukan sekadar tentang lamanya waktu, tapi tentang dua hati
+      yang terus belajar saling memilih, saling menguatkan, dan tetap bertahan
+      meski ada lelah dan luka di perjalanan.<br><br>
+
+      Di hari spesial ini, aku ingin kamu tahu satu hal yang paling jujur dari
+      hatiku:<br>
+      aku bersyukur memilikimu, bangga berjalan bersamamu, dan dengan sungguh-sungguh
+      menatap masa depan yang ingin kujalani bersamamu.<br><br>
+
+      Selamat Hari Valentine dan selamat 7 bulan jadian kita.<br>
+      Semoga langkah kita ke depan selalu seirama, ditemani cinta yang terus
+      bertumbuh dan semakin dalam setiap harinya. 🤍✨
+    </p>
+  </div>
+</section>
+
+<!-- GALLERY 8 FOTO -->
+<section class="gallery reveal">
+  <h2>📸 Kenangan Kita</h2>
+  <div class="slider" id="slider">
+    <img src="foto1.jpg" onclick="openModal(this.src)">
+    <img src="foto2.jpg" onclick="openModal(this.src)">
+    <img src="foto3.jpg" onclick="openModal(this.src)">
+    <img src="foto4.jpg" onclick="openModal(this.src)">
+    <img src="foto5.jpg" onclick="openModal(this.src)">
+    <img src="foto6.jpg" onclick="openModal(this.src)">
+    <img src="foto7.jpg" onclick="openModal(this.src)">
+    <img src="foto8.jpg" onclick="openModal(this.src)">
+  </div>
+</section>
+
+<!-- Countdown -->
+<section class="countdown reveal">
+  <h2>⏳ Kita Telah Bersama Selama</h2>
+  <div id="timer">
+    <div><span id="days">0</span><small>Hari</small></div>
+    <div><span id="hours">0</span><small>Jam</small></div>
+    <div><span id="minutes">0</span><small>Menit</small></div>
+    <div><span id="seconds">0</span><small>Detik</small></div>
+  </div>
+</section>
+
+<!-- Love Button -->
+<section class="love reveal">
+  <button onclick="loveBurst()">💗 Klik Aku</button>
+  <p id="loveText"></p>
+</section>
+
+<!-- Closing -->
+<section class="closing reveal">
+  <p>
+    Aku tidak tahu bagaimana masa depan akan berjalan,<br>
+    tapi aku tahu dengan siapa aku ingin menjalaninya. 🤍
+  </p>
+</section>
+
+<section class="letter reveal">
+  <button onclick="openLetter()">💌 Buka Surat Rahasia</button>
+
+  <div class="letter-box" id="letterBox">
+    <p>
+      Kalau suatu hari kamu ragu,<br>
+      baca ini dan ingat satu hal:<br><br>
+
+      aku memilihmu bukan karena semuanya mudah,<br>
+      tapi karena bersamamu aku ingin bertahan.<br><br>
+
+      Aku mencintaimu, hari ini, besok,<br>
+      dan selama aku masih bisa memilih. 🤍
+    </p>
+    <button onclick="closeLetter()">Tutup 🤍</button>
+  </div>
+</section>
+
+
+<script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,557 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  background: linear-gradient(180deg, #fff5f7, #f8cdda);
+  color: #5a1a2c;
+  text-align: center;
+}
+
+.hero {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.glass {
+  background: rgba(255,255,255,0.35);
+  backdrop-filter: blur(12px);
+  padding: 40px;
+  border-radius: 30px;
+  box-shadow: 0 20px 40px rgba(0,0,0,.15);
+}
+
+.hero h1 {
+  font-family: 'Great Vibes', cursive;
+  font-size: 56px;
+}
+
+.hero button {
+  margin-top: 20px;
+  padding: 12px 32px;
+  border-radius: 40px;
+  border: none;
+  background: #ff4d6d;
+  color: white;
+  cursor: pointer;
+}
+
+.photo {
+  padding: 70px 20px;
+}
+
+.photo img {
+  width: 260px;
+  height: 260px;
+  object-fit: cover;
+  border-radius: 30px;
+  box-shadow: 0 20px 40px rgba(0,0,0,.25);
+}
+
+.message {
+  padding: 60px 20px;
+}
+
+.card {
+  max-width: 850px;
+  margin: auto;
+  background: rgba(255,255,255,0.75);
+  padding: 40px;
+  border-radius: 30px;
+  line-height: 1.9;
+}
+
+.gallery {
+  padding: 70px 20px;
+}
+
+.slider {
+  display: flex;
+  gap: 20px;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+}
+
+.slider img {
+  width: 220px;
+  height: 280px;
+  object-fit: cover;
+  border-radius: 25px;
+  scroll-snap-align: center;
+  transition: .4s;
+}
+
+.slider img:hover {
+  transform: scale(1.1);
+}
+
+.countdown {
+  padding: 70px 20px;
+}
+
+#timer {
+  display: flex;
+  justify-content: center;
+  gap: 18px;
+}
+
+#timer div {
+  background: white;
+  padding: 18px 22px;
+  border-radius: 18px;
+}
+
+#timer span {
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.love {
+  padding: 60px 20px;
+}
+
+.love button {
+  padding: 15px 35px;
+  border-radius: 40px;
+  border: none;
+  background: #c9184a;
+  color: white;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+#loveText {
+  margin-top: 15px;
+  font-style: italic;
+}
+
+.closing {
+  padding: 80px 20px;
+}
+
+.music-control {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  background: white;
+  padding: 10px 14px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.reveal {
+  opacity: 0;
+  transform: translateY(60px);
+  transition: 1s;
+}
+
+.reveal.active {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.heart {
+  position: fixed;
+  bottom: -10px;
+  animation: floatUp 4s linear forwards;
+}
+
+@keyframes floatUp {
+  to {
+    transform: translateY(-120vh);
+    opacity: 0;
+  }
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  background: linear-gradient(180deg, #fff0f5, #fde2e4, #f8cdda);
+  color: #5a1a2c;
+  text-align: center;
+  overflow-x: hidden;
+}
+
+/* HERO */
+.hero {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.glass {
+  background: rgba(255,255,255,0.45);
+  backdrop-filter: blur(16px);
+  padding: 50px;
+  border-radius: 35px;
+  box-shadow: 0 30px 60px rgba(255,77,109,.25);
+  max-width: 90%;
+}
+
+.romantic-glow {
+  animation: glow 3s ease-in-out infinite alternate;
+}
+
+@keyframes glow {
+  from { box-shadow: 0 0 25px rgba(255,77,109,.25); }
+  to { box-shadow: 0 0 45px rgba(255,77,109,.45); }
+}
+
+.hero h1 {
+  font-family: 'Great Vibes', cursive;
+  font-size: 64px;
+  margin-bottom: 10px;
+}
+
+.hero-text {
+  font-size: 18px;
+  letter-spacing: 1px;
+}
+
+/* BUTTON */
+.btn-love {
+  margin-top: 25px;
+  padding: 14px 38px;
+  border-radius: 50px;
+  border: none;
+  background: linear-gradient(45deg, #ff4d6d, #ff758f);
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.06); }
+  100% { transform: scale(1); }
+}
+
+/* PHOTO */
+.photo {
+  padding: 80px 20px;
+}
+
+.photo img {
+  width: 260px;
+  height: 260px;
+  object-fit: cover;
+  border-radius: 35px;
+  box-shadow: 0 0 40px rgba(255,77,109,.35);
+}
+
+.caption {
+  margin-top: 18px;
+  font-style: italic;
+  opacity: .85;
+}
+
+/* MESSAGE */
+.message {
+  padding: 70px 20px;
+}
+
+.card {
+  max-width: 900px;
+  margin: auto;
+  background: rgba(255,255,255,0.8);
+  padding: 45px;
+  border-radius: 40px;
+  line-height: 2;
+  box-shadow: 0 25px 50px rgba(255,77,109,.25);
+}
+
+/* GALLERY */
+.gallery {
+  padding: 80px 20px;
+}
+
+.gallery h2 {
+  margin-bottom: 30px;
+}
+
+.slider {
+  display: flex;
+  gap: 25px;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  padding-bottom: 10px;
+}
+
+.slider img {
+  width: 230px;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 30px;
+  scroll-snap-align: center;
+  transition: .4s;
+  box-shadow: 0 15px 35px rgba(0,0,0,.25);
+}
+
+.slider img:hover {
+  transform: scale(1.12);
+}
+
+/* COUNTDOWN */
+.countdown {
+  padding: 80px 20px;
+}
+
+#timer {
+  display: flex;
+  justify-content: center;
+  gap: 18px;
+}
+
+#timer div {
+  background: rgba(255,255,255,.9);
+  padding: 18px 24px;
+  border-radius: 22px;
+  box-shadow: 0 10px 25px rgba(255,77,109,.25);
+}
+
+#timer span {
+  font-size: 30px;
+  font-weight: bold;
+}
+
+/* LOVE BUTTON */
+.love {
+  padding: 70px 20px;
+}
+
+.love button {
+  padding: 16px 42px;
+  border-radius: 50px;
+  border: none;
+  background: linear-gradient(45deg, #ff4d6d, #ff8fab);
+  color: white;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+#loveText {
+  margin-top: 18px;
+  font-style: italic;
+  opacity: .85;
+}
+
+/* CLOSING */
+.closing {
+  padding: 90px 20px;
+  font-size: 18px;
+}
+
+/* MUSIC */
+.music-control {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  background: white;
+  padding: 12px 16px;
+  border-radius: 50%;
+  cursor: pointer;
+  box-shadow: 0 10px 25px rgba(0,0,0,.25);
+}
+
+/* REVEAL */
+.reveal {
+  opacity: 0;
+  transform: translateY(70px);
+  transition: 1.2s ease;
+}
+
+.reveal.active {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* HEARTS */
+.heart {
+  position: fixed;
+  bottom: -10px;
+  animation: floatUp 4s linear forwards;
+}
+
+@keyframes floatUp {
+  to {
+    transform: translateY(-120vh);
+    opacity: 0;
+  }
+}
+
+/* ===========================
+   RESPONSIVE DESIGN
+=========================== */
+
+/* GLOBAL FIX */
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+section {
+  padding-left: 16px;
+  padding-right: 16px;
+}
+
+/* MAX WIDTH CENTER (PC) */
+.message .card,
+.glass {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* ===========================
+   TABLET & MOBILE
+=========================== */
+@media (max-width: 768px) {
+
+  /* HERO */
+  .hero h1 {
+    font-size: 44px;
+  }
+
+  .glass {
+    padding: 35px 25px;
+    border-radius: 28px;
+  }
+
+  .hero-text {
+    font-size: 16px;
+  }
+
+  /* PHOTO */
+  .photo img {
+    width: 220px;
+    height: 220px;
+  }
+
+  /* MESSAGE */
+  .card {
+    padding: 30px 22px;
+    line-height: 1.85;
+    font-size: 14.5px;
+  }
+
+  /* GALLERY */
+  .slider {
+    gap: 16px;
+  }
+
+  .slider img {
+    width: 180px;
+    height: 240px;
+  }
+
+  /* COUNTDOWN */
+  #timer {
+    flex-wrap: wrap;
+    gap: 12px;
+  }
+
+  #timer div {
+    width: 45%;
+  }
+
+  /* BUTTONS */
+  .btn-love,
+  .love button {
+    padding: 14px 30px;
+    font-size: 15px;
+  }
+
+  /* CLOSING */
+  .closing {
+    font-size: 15px;
+    padding: 70px 16px;
+  }
+}
+
+/* ===========================
+   SMALL MOBILE (HP KECIL)
+=========================== */
+@media (max-width: 480px) {
+
+  /* HERO */
+  .hero h1 {
+    font-size: 36px;
+  }
+
+  .glass {
+    padding: 28px 20px;
+  }
+
+  /* PHOTO */
+  .photo img {
+    width: 190px;
+    height: 190px;
+  }
+
+  /* MESSAGE */
+  .card {
+    font-size: 14px;
+    padding: 26px 18px;
+  }
+
+  /* GALLERY */
+  .slider img {
+    width: 160px;
+    height: 220px;
+  }
+
+  /* COUNTDOWN */
+  #timer div {
+    width: 100%;
+  }
+
+  /* MUSIC ICON */
+  .music-control {
+    padding: 10px 13px;
+  }
+}
+
+/* LOVE LETTER */
+.letter {
+  padding: 80px 20px;
+}
+
+.letter button {
+  padding: 15px 38px;
+  border-radius: 50px;
+  border: none;
+  background: linear-gradient(45deg,#ff4d6d,#ff8fab);
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.letter-box {
+  display: none;
+  max-width: 650px;
+  margin: 30px auto 0;
+  background: rgba(255,255,255,.9);
+  padding: 35px;
+  border-radius: 30px;
+  line-height: 2;
+  box-shadow: 0 25px 50px rgba(255,77,109,.3);
+  animation: fadeUp 1s ease;
+}
+
+@keyframes fadeUp {
+  from { opacity: 0; transform: translateY(40px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+
